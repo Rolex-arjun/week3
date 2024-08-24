@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Auto</title>
+    <style>
+        .content-box {
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur facilisis malesuada diam nec facilisis. Praesent at justo at velit malesuada tincidunt. Cras egestas massa non magna aliquam, ut cursus ligula laoreet. Duis ac ipsum sapien
