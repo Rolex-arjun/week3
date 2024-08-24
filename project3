@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Profile</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Profile Header */
+        .profile-header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #007bff;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .profile-picture {
+            width: 80px;
+            height: 80px;
+            background-color: #ddd;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .profile-info {
+            flex-grow: 1;
+        }
+
+        .profile-name {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .profile-nav .nav-link {
+            margin-right: 15px;
+            color: white;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .profile-nav .nav-link:hover::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #ff4500;
+            transition: width 0.3s ease-in-out;
+        }
+
+        .profile-nav .nav-link:hover {
+            color: #ff4500;
+        }
+
+        /* Profile Content */
+        .profile-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .posts-section,
+        .friends-section,
+        .activities-section {
+            flex: 1 1 calc(33.333% - 20px);
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .post-card,
+        .friend-card,
+        .activity-card {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: transform 0.2s;
+        }
+
+        .post-card:hover,
+        .friend-card:hover,
+        .activity-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Footer */
+        .profile-footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .profile-content {
+                flex-direction: column;
+            }
+
+            .posts-section,
+            .friends-section,
+            .activities-section {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="profile-header">
+        <div class="profile-picture"></div>
+        <div class="profile-info">
+            <h1 class="profile-name">John Doe</h1>
+            <nav class="profile-nav">
+                <a href="#posts" class="nav-link">Posts</a>
+                <a href="#friends" class="nav-link">Friends</a>
+                <a href="#activities" class="nav-link">Activities</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="profile-content">
+        <section id="posts" class="posts-section">
+            <h2>Posts</h2>
+            <div class="post-card">Post 1</div>
+            <div class="post-card">Post 2</div>
+            <div class="post-card">Post 3</div>
+        </section>
+
+        <section id="friends" class="friends-section">
+            <h2>Friends</h2>
+            <div class="friend-card">Friend 1</div>
+            <div class="friend-card">Friend 2</div>
+            <div class="friend-card">Friend 3</div>
+        </section>
+
+        <section id="activities" class="activities-section">
+            <h2>Activities</h2>
+            <div class="activity-card">Activity 1</div>
+            <div class="activity-card">Activity 2</div>
+            <div class="activity-card">Activity 3</div>
+        </section>
+    </main>
+
+    <footer class="profile-footer">
+        <p>&copy; 2024 Social Media Platform</p>
+    </footer>
+</body>
+</html>
