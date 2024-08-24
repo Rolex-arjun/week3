@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Color Transition Button</title>
+    <style>
+        .transition-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.5s ease-in-out; /* Smooth transition */
+        }
+
+        .transition-button:hover {
+            background-color: #ff4500; /* New color on hover */
+        }
+    </style>
+</head>
+<body>
+    <button class="transition-button">Hover Me</button>
+</body>
+</html>
