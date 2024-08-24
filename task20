@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Overflow Auto</title>
+    <title>Content Box with Scrollbars</title>
     <style>
         .content-box {
             width: 300px;
             height: 150px;
             padding: 10px;
             border: 1px solid #ccc;
-            overflow: auto;
+            overflow: auto; /* Adds scrollbars when content exceeds the box size */
+            box-sizing: border-box;
         }
     </style>
 </head>
 <body>
     <div class="content-box">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur facilisis malesuada diam nec facilisis. Praesent at justo at velit malesuada tincidunt. Cras egestas massa non magna aliquam, ut cursus ligula laoreet. Duis ac ipsum sapien
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur facilisis malesuada diam nec facilisis. Praesent at justo at velit malesuada tincidunt. Cras egestas massa non magna aliquam, ut cursus ligula laoreet. Duis ac ipsum sapien. Quisque et velit ut libero vehicula consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+</body>
+</html>
