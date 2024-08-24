@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery with Overlay</title>
+    <style>
+        .gallery {
+            width: 300px;
+            position: relative;
+        }
+        .gallery img {
+            width: 100%;
+            display: block;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            z-index: 1;
+            transition: opacity 0.3s ease;
+        }
+        .gallery:hover .overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="image.jpg" alt="Gallery Image">
+        <div class="overlay">Overlay Text</div>
+    </div>
+</body>
+</html>
