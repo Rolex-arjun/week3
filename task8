@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floated Columns with Clearfix</title>
+    <style>
+        .container {
+            width: 100%;
+            overflow: hidden; /* Clearfix */
+        }
+        .left-column {
+            float: left;
+            width: 45%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin-right: 5%;
+        }
+        .right-column {
+            float: right;
+            width: 45%;
+            background-color: #e2e2e2;
+            padding: 20px;
+        }
+        /* Clearfix */
+        .container::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <h2>Left Column</h2>
+            <p>This column floats to the left of the container.</p>
+        </div>
+        <div class="right-column">
+            <h2>Right Column</h2>
+            <p>This column floats to the right of the container.</p>
+        </div>
+    </div>
+</body>
+</html>
