@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Hidden</title>
+    <style>
+        .hidden-overflow {
+            width: 300px;
+            height: 150px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            overflow: hidden; /* Hides any overflowing content */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="hidden-overflow">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur facilisis malesuada diam nec facilisis. Praesent at justo at velit malesuada tincidunt. Cras egestas massa non magna aliquam, ut cursus ligula laoreet. Duis ac ipsum sapien. Quisque et velit ut libero vehicula consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    </div>
+</body>
+</html>
