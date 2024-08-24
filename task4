@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Header</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+        .content {
+            padding-top: 60px; /* Space for fixed header */
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fixed Header</h1>
+    </header>
+    <div class="content">
+        <p>Scroll down to see the effect of the fixed header...</p>
+        <!-- Add more content here to make the page scrollable -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam...</p>
+    </div>
+</body>
+</html>
