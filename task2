@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Column Layout</title>
+    <style>
+        .container {
+            width: 100%;
+        }
+        .sidebar, .main-content {
+            display: inline-block;
+            vertical-align: top;
+            padding: 10px;
+        }
+        .sidebar {
+            width: 25%;
+            background-color: #f4f4f4;
+        }
+        .main-content {
+            width: 70%;
+            background-color: #e2e2e2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+            <p>Links, information, or other content can go here.</p>
+        </div>
+        <div class="main-content">
+            <h2>Main Content</h2>
+            <p>This is where the primary content of the page will go.</p>
+        </div>
+    </div>
+</body>
+</html>
